@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #262D46;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #33394E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+.header-left {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 120px;
+}
+
+.header-right {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    margin-right: 120px;
+}
+
+.header-right .nav-link:nth-child(1) {
+    color: #829BF3;
+}
+
+.header-right .nav-link:nth-child(2) {
+    margin-left: 24px;
+}
+
+.header-right .nav-link:nth-child(3) {
+    margin-left: 24px;
+}
+
+.nav-link {
+    color: #CDD4EC;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.title {
+    position: absolute;
+    margin-top: -700px;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.weather-container {
+    margin-top: 25px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background-color: #0F2836;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    position: relative;
+    width: 423px;
+    height: 526px;
+}
+
+.weather-icon img {
+    margin-top: 81px;
+    width: 110px;
+}
+
+.time-icon img {
+    width: auto;
+}
+
+#wind-icon {
+    width: auto;
+}
+
+#location-icon {
+    width: auto;
+}
+
+.weather-icon, .time-icon {
+    margin-top: 10px;
+}
+
+.time-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coordinates {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#temperature-celsius {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 73.59px;
+}
+
+#temperature-fahrenheit {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.1px;
+    margin: 104px 0 0 50px;
+}
+
+#wind-speed {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.1px;
+}
+
+.wind-speed {
+    margin: 100px 0 0 300px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+#wind-icon {
+    margin-right: 4px;
+}
+
+#latitude {
+    margin: 25px 0 0 -9px;
+    font-style: italic;
+}
+
+#location-icon {
+    margin: 0 0 0 -200px;
+}
+
+#longitude {
+    margin: 8px 0 0 4px;
+    font-style: italic;
+}
+
+.pagination {
+    margin-top: 800px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.page-button {
+    background-color: #33394E;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    transition: background-color 0.75s ease;
+}
+
+.page-button:hover {
+    background-color: #4c4f70;
+}
+
+.page-button.active {
+    background-color: #475fe2;
+}

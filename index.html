@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shualeduri 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">Weather</div>
+        <nav class="header-right">
+            <a href="#" class="nav-link">home</a>
+            <a href="#" class="nav-link">catalogue</a>
+            <a href="#" class="nav-link">about us</a>
+        </nav>
+    </header>
+    <div class="title">
+        <p>Weather API</p>
+    </div>
+    <div class="weather-container">
+        <div class="weather-card">
+            <div class="location">
+                <img id="location-icon" alt="Location Icon">
+                <div class="coordinates">
+                    <span id="latitude"></span>
+                    <span id="longitude"></span>
+                </div>
+            </div>
+            <div class="weather-icon" id="weather-icon"></div>
+            <div class="time-icon" id="time-icon"></div>
+            <div class="temperature">
+                <div id="temperature-celsius"></div>
+                <div id="temperature-fahrenheit"></div>
+            </div>
+            <div class="wind-speed">
+                <img id="wind-icon" alt="Wind Icon">
+                <span id="wind-speed"></span>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <button class="page-button" id="prev">&lt;</button>
+        <button class="page-button active">1</button>
+        <button class="page-button">2</button>
+        <button class="page-button">3</button>
+        <button class="page-button">...</button>
+        <button class="page-button">10</button>
+        <button class="page-button" id="next">&gt;</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
